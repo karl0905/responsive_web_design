@@ -1,0 +1,90 @@
+body{
+    color:white;
+    background-image: url(../images/plant_background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#velkommen {
+    background-color:forestgreen;
+    font-family: 'Pridi', serif;
+    padding: 25px;
+}
+
+h1 {
+    background: forestgreen;
+    font-family: 'Pridi', serif;
+    padding: 25px;
+}
+
+#plant_1{
+    position:absolute;
+    right: 1.2rem;
+    top: 1.2rem;
+    max-width: 100%;
+}
+
+.indhold {
+    background-color: beige;
+    color: brown;
+    padding: 20px;
+    position: relative;
+}
+
+.nav_top {
+    background-color: darkolivegreen;
+    padding: 10px;
+    display: flex;
+    gap: 50px;
+    padding-left: 25px;
+}
+
+.navigation_top {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation_top:hover {
+    color: darkgrey;
+}
+
+.footer{
+    background-color: darkslategrey;
+    padding: 0.7rem;
+    
+}
+
+.nav_bot {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_text {
+    font-size: 1.2rem;
+}
+
+.navigation_bot {
+    color: white;
+    text-decoration: none;
+
+}
+
+.navigation_bot:hover {
+    color: darkgrey;
+
+}
+
+/* når bredden kommer under 740px */
+@media only screen and (max-width:740px) {
+    .nav_top {
+      flex-direction: column;
+      gap: 15px;
+    }
+    #plant_1 {
+        display: none;
+    }
+  }
+
